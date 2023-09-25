@@ -2,7 +2,7 @@ package ru.skypro.HomeWork_2_3;
 
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car("car1",4);
+        Car car = new Car("car1", 4);
         Car car2 = new Car("car2", 4);
 
         Truck truck = new Truck("truck1", 6);
@@ -12,6 +12,7 @@ public class Main {
         Bicycle bicycle2 = new Bicycle("bicycle2", 2);
 
         ServiceInterface station = new ServiceStation();
+
         station.check(car);
         station.check(car2);
         station.check(bicycle);
