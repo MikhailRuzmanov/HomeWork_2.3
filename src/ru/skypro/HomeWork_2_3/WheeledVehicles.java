@@ -1,6 +1,7 @@
 package ru.skypro.HomeWork_2_3;
 
-public class WheeledVehicles {
+
+public class WheeledVehicles extends VehiclesWithEngine {
     private String modelName;
 
     private int wheelsCount;
@@ -29,9 +30,12 @@ public class WheeledVehicles {
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
-    }
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+
     }
 
 }
+
+
+
+
+

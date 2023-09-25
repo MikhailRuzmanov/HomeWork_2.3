@@ -6,6 +6,11 @@ public class Truck extends WheeledVehicles{
         super(modelName, wheelsCount);
     }
 
+    @Override
+    public void checkEngine() {
+        super.checkEngine();
+    }
+
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
