@@ -31,8 +31,8 @@ public class WheeledVehicles extends VehiclesWithEngine {
     public void updateTyre() {
         System.out.println("Меняем покрышку");
 
-    }
 
+    }
 }
 
 

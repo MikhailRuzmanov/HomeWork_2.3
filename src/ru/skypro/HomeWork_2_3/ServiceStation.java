@@ -10,9 +10,7 @@ public class ServiceStation implements ServiceInterface {
             System.out.println("***************************");
             System.out.println("Обслуживаем " + bicycle.getModelName());
             System.out.println("***************************");
-            for (int i = 0; i < bicycle.getWheelsCount(); i++) {
-                bicycle.updateTyre();
-            }
+            bicycle.service();
         }
     }
 
@@ -23,10 +21,7 @@ public class ServiceStation implements ServiceInterface {
             System.out.println("***************************");
             System.out.println("Обслуживаем " + car.getModelName());
             System.out.println("***************************");
-            for (int i = 0; i < car.getWheelsCount(); i++) {
-                car.updateTyre();
-            }
-            car.checkEngine();
+            car.service();
         }
     }
     @Override
@@ -36,11 +31,7 @@ public class ServiceStation implements ServiceInterface {
             System.out.println("***************************");
             System.out.println("Обслуживаем " + truck.getModelName());
             System.out.println("***************************");
-            for (int i = 0; i < truck.getWheelsCount(); i++) {
-                truck.updateTyre();
-            }
-            truck.checkEngine();
-            truck.checkTrailer();
+            truck.service();
         }
     }
 }
